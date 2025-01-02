@@ -1,4 +1,3 @@
-
 # Mini File Management Application
 
 This project is a small, personal **file management application** built with **Tkinter**, a Python library for graphical user interfaces. It was orginally created to help streamline the process of moving downloaded files to their appropriate directories on my ~~regrettably~~ well-organized local drive.
@@ -37,7 +36,7 @@ To run the application, you need Python 3.x and the **Tkinter** library. Tkinter
 
 2. Ensure Python 3.x is installed.
 
-3. **Install Tkinter** (if not already installed):
+3. Install Tkinter (if not already installed):
    - On **Windows**, Tkinter is included by default with Python.
    - On **macOS**, Tkinter should be installed with Python, but if not, you can install it via Homebrew:
      ```bash
@@ -47,8 +46,14 @@ To run the application, you need Python 3.x and the **Tkinter** library. Tkinter
      ```bash
      sudo apt-get install python3-tk
      ```
+4. Configure the application: 
+     - The application is designed to manage files from a specified source directory (`path`) and move them to a target directory, which is selected via the GUI from the parent directory (`to_path`). For example, these directories were set as follows:
+       - Default `path`: `/Users/ianalgenio/Downloads`
+       - Default `to_path`: `/Users/ianalgenio`
 
-4. Run the application:
+      - To change these, modify them directly in the `Model` class.
+
+5. Run the application:
    ```bash
    python main.py
    ```
